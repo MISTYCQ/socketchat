@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
-import 'screens/login_screen.dart';
+import 'screens/enhanced_login_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const EnhancedChatApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class EnhancedChatApp extends StatelessWidget {
+  const EnhancedChatApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Socket Chat',
       theme: AppTheme.theme,
-      home: const LoginScreen(),
+      home: const EnhancedLoginScreen(),
     );
   }
 }
